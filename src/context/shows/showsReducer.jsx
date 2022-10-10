@@ -17,6 +17,17 @@ const showsReducer = (state, action) => {
                     ...state,
                     shows: action.payload,
                     loading: false,
+                };
+            case SET_SINGLE_SHOW:
+                return{
+                    ...state,
+                    singleShow: action.payload,
+                    loading: false
+                }
+            case CLEAR_SINGLE_SHOW:
+                return{
+                    ...state,
+                    singleShow: {}
                 }
             default:
                 return state;

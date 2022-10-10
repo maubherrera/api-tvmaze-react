@@ -1,5 +1,5 @@
 //paquetes
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 //componentes
 import Navbar from "./components/Navbar"
@@ -14,11 +14,11 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <div className="container">
-        <Routes>
-          <Route exact path="/" element={<Homepage />} />
-          <Route exact path="/about" element={<Aboutpage/>} />
-          <Route path="/singleshow/:id" element={<Singlepage />}/>
-        </Routes>
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/about" componentent={Aboutpage} />
+          <Route path="/singleshow/:id" component={Singlepage}/>
+        </Switch>
       </div>
     </BrowserRouter>
   )

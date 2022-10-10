@@ -177,3 +177,33 @@ img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
+
+
+/*pagina de cada pelicaula*/
+
+.singleshow {
+  display: flex;
+  margin: 5rem;
+}
+
+.singleshow>img {
+  margin-right: 3rem;
+}
+
+.singleshow__info p {
+  margin: 1.5 rem 0;
+}
+
+.singleshow__genre {
+  display: inline-block;
+  border-radius: 15px;
+  margin: 1rem 2rem 0.5rem 0;
+  padding: 10px 17px;
+  background: var(--secondary-color);
+  color: var(--offwhite-color);
+}
+
+.loader img {
+  margin: 2rem auto;
+  display: block;
+}
