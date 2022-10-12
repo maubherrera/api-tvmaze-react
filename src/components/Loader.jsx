@@ -4,7 +4,7 @@ import spinner from '../assets/spinner.gif'
 const Loader = () => {
   return (
     <div className='loader'>
-        <img src={spinner} alt="Cargando" />
+      <img src={spinner} alt='Cargando' />
     </div>
   )
 }
